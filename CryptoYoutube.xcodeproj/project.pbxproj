@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1332CC912A0A8CF9007A8920 /* CryptoYoutubeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CC902A0A8CF9007A8920 /* CryptoYoutubeApp.swift */; };
+		1332CC932A0A8CF9007A8920 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CC922A0A8CF9007A8920 /* ContentView.swift */; };
+		1332CC952A0A8CFA007A8920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1332CC942A0A8CFA007A8920 /* Assets.xcassets */; };
+		1332CC982A0A8CFA007A8920 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1332CC972A0A8CFA007A8920 /* Preview Assets.xcassets */; };
+		1332CCA02A0BD642007A8920 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CC9F2A0BD642007A8920 /* Color.swift */; };
+		1332CCA72A0BD79A007A8920 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CCA62A0BD79A007A8920 /* HomeView.swift */; };
+		1332CCAB2A0BD88A007A8920 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CCAA2A0BD88A007A8920 /* CircleButtonView.swift */; };
+		1332CCAD2A0BDBB7007A8920 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CCAC2A0BDBB7007A8920 /* CircleButtonAnimationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1332CC8D2A0A8CF9007A8920 /* CryptoYoutube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoYoutube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1332CC902A0A8CF9007A8920 /* CryptoYoutubeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoYoutubeApp.swift; sourceTree = "<group>"; };
+		1332CC922A0A8CF9007A8920 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1332CC942A0A8CFA007A8920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1332CC972A0A8CFA007A8920 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1332CC9F2A0BD642007A8920 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		1332CCA62A0BD79A007A8920 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1332CCAA2A0BD88A007A8920 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		1332CCAC2A0BDBB7007A8920 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1332CC8A2A0A8CF9007A8920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1332CC842A0A8CF9007A8920 = {
+			isa = PBXGroup;
+			children = (
+				1332CC8F2A0A8CF9007A8920 /* CryptoYoutube */,
+				1332CC8E2A0A8CF9007A8920 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1332CC8E2A0A8CF9007A8920 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1332CC8D2A0A8CF9007A8920 /* CryptoYoutube.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1332CC8F2A0A8CF9007A8920 /* CryptoYoutube */ = {
+			isa = PBXGroup;
+			children = (
+				1332CC902A0A8CF9007A8920 /* CryptoYoutubeApp.swift */,
+				1332CCA12A0BD720007A8920 /* Core */,
+				1332CC9E2A0BD62A007A8920 /* Extensions */,
+				1332CC922A0A8CF9007A8920 /* ContentView.swift */,
+				1332CC942A0A8CFA007A8920 /* Assets.xcassets */,
+				1332CC962A0A8CFA007A8920 /* Preview Content */,
+			);
+			path = CryptoYoutube;
+			sourceTree = "<group>";
+		};
+		1332CC962A0A8CFA007A8920 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1332CC972A0A8CFA007A8920 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1332CC9E2A0BD62A007A8920 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1332CC9F2A0BD642007A8920 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1332CCA12A0BD720007A8920 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1332CCA82A0BD86C007A8920 /* Components */,
+				1332CCA22A0BD732007A8920 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1332CCA22A0BD732007A8920 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1332CCA32A0BD748007A8920 /* ViewModels */,
+				1332CCA42A0BD75C007A8920 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1332CCA32A0BD748007A8920 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1332CCA42A0BD75C007A8920 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1332CCA62A0BD79A007A8920 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1332CCA82A0BD86C007A8920 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1332CCA92A0BD877007A8920 /* CircleButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1332CCA92A0BD877007A8920 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				1332CCAA2A0BD88A007A8920 /* CircleButtonView.swift */,
+				1332CCAC2A0BDBB7007A8920 /* CircleButtonAnimationView.swift */,
+			);
+			path = CircleButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1332CC8C2A0A8CF9007A8920 /* CryptoYoutube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1332CC9B2A0A8CFA007A8920 /* Build configuration list for PBXNativeTarget "CryptoYoutube" */;
+			buildPhases = (
+				1332CC892A0A8CF9007A8920 /* Sources */,
+				1332CC8A2A0A8CF9007A8920 /* Frameworks */,
+				1332CC8B2A0A8CF9007A8920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoYoutube;
+			productName = CryptoYoutube;
+			productReference = 1332CC8D2A0A8CF9007A8920 /* CryptoYoutube.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1332CC852A0A8CF9007A8920 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					1332CC8C2A0A8CF9007A8920 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 1332CC882A0A8CF9007A8920 /* Build configuration list for PBXProject "CryptoYoutube" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1332CC842A0A8CF9007A8920;
+			productRefGroup = 1332CC8E2A0A8CF9007A8920 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1332CC8C2A0A8CF9007A8920 /* CryptoYoutube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1332CC8B2A0A8CF9007A8920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1332CC982A0A8CFA007A8920 /* Preview Assets.xcassets in Resources */,
+				1332CC952A0A8CFA007A8920 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1332CC892A0A8CF9007A8920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1332CCAB2A0BD88A007A8920 /* CircleButtonView.swift in Sources */,
+				1332CC932A0A8CF9007A8920 /* ContentView.swift in Sources */,
+				1332CCA72A0BD79A007A8920 /* HomeView.swift in Sources */,
+				1332CC912A0A8CF9007A8920 /* CryptoYoutubeApp.swift in Sources */,
+				1332CCA02A0BD642007A8920 /* Color.swift in Sources */,
+				1332CCAD2A0BDBB7007A8920 /* CircleButtonAnimationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1332CC992A0A8CFA007A8920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1332CC9A2A0A8CFA007A8920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1332CC9C2A0A8CFA007A8920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoYoutube/Preview Content\"";
+				DEVELOPMENT_TEAM = 3F6RB5JZKP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Cryptotoro;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebaek.CryptoYoutube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1332CC9D2A0A8CFA007A8920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CryptoYoutube/Preview Content\"";
+				DEVELOPMENT_TEAM = 3F6RB5JZKP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Cryptotoro;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebaek.CryptoYoutube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1332CC882A0A8CF9007A8920 /* Build configuration list for PBXProject "CryptoYoutube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1332CC992A0A8CFA007A8920 /* Debug */,
+				1332CC9A2A0A8CFA007A8920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1332CC9B2A0A8CFA007A8920 /* Build configuration list for PBXNativeTarget "CryptoYoutube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1332CC9C2A0A8CFA007A8920 /* Debug */,
+				1332CC9D2A0A8CFA007A8920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1332CC852A0A8CF9007A8920 /* Project object */;
+}
