@@ -19,6 +19,7 @@
 		1332CCB22A112C79007A8920 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CCB12A112C79007A8920 /* CoinRowView.swift */; };
 		1332CCB42A151680007A8920 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CCB32A151680007A8920 /* PreviewProvider.swift */; };
 		1332CCB62A151B82007A8920 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CCB52A151B82007A8920 /* Double.swift */; };
+		1332CCD62A263E8D007A8920 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1332CCD52A263E8D007A8920 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		1332CCB12A112C79007A8920 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		1332CCB32A151680007A8920 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		1332CCB52A151B82007A8920 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		1332CCD52A263E8D007A8920 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		1332CCA32A0BD748007A8920 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				1332CCD52A263E8D007A8920 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1332CCB22A112C79007A8920 /* CoinRowView.swift in Sources */,
+				1332CCD62A263E8D007A8920 /* HomeViewModel.swift in Sources */,
 				1332CCAB2A0BD88A007A8920 /* CircleButtonView.swift in Sources */,
 				1332CC932A0A8CF9007A8920 /* ContentView.swift in Sources */,
 				1332CCA72A0BD79A007A8920 /* HomeView.swift in Sources */,

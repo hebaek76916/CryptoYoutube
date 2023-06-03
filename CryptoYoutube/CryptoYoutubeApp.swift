@@ -9,12 +9,16 @@ import SwiftUI
 
 @main
 struct CryptoYoutubeApp: App {
+    
+    @State var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
                 HomeView()
                     .navigationBarHidden(true)
             }
+            .environmentObject(vm)
         }
     }
 }
