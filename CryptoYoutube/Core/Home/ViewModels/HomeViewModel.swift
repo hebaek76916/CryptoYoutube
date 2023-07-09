@@ -18,7 +18,8 @@ class HomeViewModel: ObservableObject {
     
     private let coinDataService = CoinDataService()
     private let marketDataService = MarketDataService()
-    private var cancelables = Set<AnyCancellable>()
+    private let portfolioDataService = PortfolioDataService()
+    private var cancellables = Set<AnyCancellable>()
     
     init() {
         addSubscribers()
@@ -28,32 +29,43 @@ class HomeViewModel: ObservableObject {
         // update all coins
         $searchText
             .combineLatest(coinDataService.$allCoins)
-            .map { (text, startingCoins) -> [CoinModel] in
-                
-                guard !text.isEmpty else { return startingCoins }
-                
-                let lowerCasedText = text.lowercased()
-                
-                let filteredCoins = startingCoins.filter { coin in
-                    return coin.name.lowercased().contains(lowerCasedText) ||
-                    coin.symbol.lowercased().contains(lowerCasedText) ||
-                    coin.id.lowercased().contains(lowerCasedText)
-                }
-                return filteredCoins
-            }
+            .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
+            .map(filterCoins)
             .sink { [weak self] returnedCoin in
                 self?.allCoins = returnedCoin
             }
-            .store(in: &cancelables)
+            .store(in: &cancellables)
         
+        // update marketData
         marketDataService.$marketData
             .map(mapGlobalMarketData)
             .sink { [weak self] returnedStats in
                 self?.statistics = returnedStats
             }
-            .store(in: &cancelables)
+            .store(in: &cancellables)
+        
+        // updates portfolioCoins
+        $allCoins
+            .combineLatest(portfolioDataService.$savedEntities)
+            .map { coinModels, portfolioEntities -> [CoinModel] in
+                coinModels
+                    .compactMap { coin -> CoinModel? in
+                        guard let entity = portfolioEntities.first(where: { $0.coinID == coin.id }) else {
+                            return nil
+                        }
+                        return coin.updateHoldings(amount: entity.amount)
+                    }
+            }
+            .sink { [weak self] returnedCoins in
+                self?.portfolioCoins = returnedCoins
+            }
+            .store(in: &cancellables)
     }
     
+    func updatePortfolio(coin: CoinModel, amount: Double) {
+        portfolioDataService.updatePortfolio(coin: coin, amount: amount)
+    }
+     
     private func filterCoins(text: String, coins: [CoinModel]) -> [CoinModel] {
         guard !text.isEmpty else { return coins }
         
